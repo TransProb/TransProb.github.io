@@ -69,7 +69,9 @@ article p {
   }
 }
 </style>
-
+<p class="pub-note">
+  <u>Underlined author</u> indicates myself; * indicates the corresponding author.
+</p>
 <div class="publications">
 
 {% bibliography %}
