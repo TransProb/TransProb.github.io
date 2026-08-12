@@ -5,58 +5,84 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://jianbiao.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/people/">people </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> </h1> <p class="desc"></p> </header> <article> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/assets/img/prof_pic.jpg?v=b8caac1fcef9750c0e2b17cbc6e71ad9" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </source></picture> </figure> </div> <div class="clearfix"> <style>
+/* =========================
+   Global font
+   ========================= */
 body,
 p,
+li,
+a,
 h1,
-h2 {
-  text-transform: none !important;
-}
-
-h2::first-letter {
-  text-transform: uppercase;
-},
+h2,
 h3,
 h4,
 h5,
 h6,
-li,
-a {
+strong,
+b,
+.post-title,
+.post-description {
   font-family: "Times New Roman", Times, serif !important;
 }
 
-/* 普通正文 */
+/* Normal body text */
 body,
 p,
 li {
   font-weight: 400;
 }
 
-/* 只有 Markdown 的 **文字** 加粗 */
+/* Bold text */
 strong,
 b {
-  font-family: "Times New Roman", Times, serif !important;
   font-weight: 700 !important;
 }
-  
+
+/* =========================
+   Paragraph formatting
+   ========================= */
 article p {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
 }
 
+/* =========================
+   Headings
+   ========================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none !important;
+}
+
+/* Capitalize only the first letter of h2 headings
+   e.g. selected publications -> Selected publications */
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+/* =========================
+   Profile information
+   ========================= */
 .profile .more-info,
 .profile .more-info p {
   font-family: "Times New Roman", Times, serif !important;
   text-align: left;
 }
 
-/* Center the navigation menu */
+/* =========================
+   Navigation bar
+   ========================= */
 @media (min-width: 992px) {
   .navbar {
+    position: relative;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
-}
 
   .navbar-nav {
     position: absolute;
@@ -66,10 +92,11 @@ article p {
   }
 
   .navbar-nav .nav-link {
+    font-family: "Times New Roman", Times, serif !important;
     text-transform: uppercase;
   }
 }
-</style> <p>Welcome, I am <strong>Jianbiao Wang</strong>, currently a lecturer at the <a href="https://info.njau.edu.cn/index.htm" rel="external nofollow noopener" target="_blank">College of Information Management, Nanjing Agricultural University</a> since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.</p> <p>I received my Ph.D. from Nagoya University under the supervision of <a href="https://sites.google.com/site/tomiomiwa/home" rel="external nofollow noopener" target="_blank">Prof. Tomio Miwa</a> in 2024 and subsequently conducted postdoctoral research with <a href="https://yuki-oyama.github.io/" rel="external nofollow noopener" target="_blank">Prof. Yuki Oyama</a> at the University of Tokyo. During my doctoral and postdoctoral studies in Japan, I was supported by the Nagoya University Interdisciplinary Frontier Fellowship and the Japan Society for the Promotion of Science (JSPS).</p> <h3 id="research-interests">Research Interests</h3> <ul> <li>Travel Behavior</li> <li>Transportation Network modelling</li> <li>Logistics service design</li> </ul> </div> <h2> <a href="/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jan 15, 2016</th> <td> A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> </td> </tr> <tr> <th scope="row" style="width: 20%">Nov 07, 2015</th> <td> <a class="news-title" href="/news/announcement_2/">A long announcement with details</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 22, 2015</th> <td> A simple inline announcement. </td> </tr> </table> </div> </div> <h2> <a href="/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div id="wang2023recursive" class="col-sm-10"> <div class="title">Recursive decomposition probability model for demand estimation of street-hailing taxis utilizing GPS trajectory data</div> <div class="author"> <em>Jianbiao Wang<sup>*</sup></em>, Tomio Miwa, and Takayuki Morikawa </div> <div class="periodical"> <em>Transportation Research Part B: Methodological</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div id="wang2023recovering" class="col-sm-10"> <div class="title">Recovering real demand for free-floating bike-sharing system considering demand truncation, migration, and spatial correlation</div> <div class="author"> <em>Jianbiao Wang<sup>*</sup></em>, Tomio Miwa, Xinwei Ma, Dawei Li, and Takayuki Morikawa </div> <div class="periodical"> <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div id="wang2026quantifying" class="col-sm-10"> <div class="title">Quantifying willingness-to-walk across varying urban visual contexts using a global-local path choice model</div> <div class="author"> <em>Jianbiao Wang</em> and Yuki Oyama<sup>*</sup> </div> <div class="periodical"> <em>Journal of Transport Geography</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> </ol> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:wang.jianbiao@njau.edu.cn" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/TransProb" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://scholar.google.com/citations?user=M4haNa0AAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> </div> <div class="contact-note">Feel free to contact me and discuss research works. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jianbiao WANG. © Jianbiao Wang </div> </footer> <script>
+</style> <p>Welcome, I am <strong>Jianbiao Wang</strong>, currently a lecturer at the <a href="https://info.njau.edu.cn/index.htm" rel="external nofollow noopener" target="_blank">College of Information Management, Nanjing Agricultural University</a> since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.</p> <p>I received my Ph.D. from Nagoya University under the supervision of <a href="https://sites.google.com/site/tomiomiwa/home" rel="external nofollow noopener" target="_blank">Prof. Tomio Miwa</a> in 2024 and subsequently conducted postdoctoral research with <a href="https://yuki-oyama.github.io/" rel="external nofollow noopener" target="_blank">Prof. Yuki Oyama</a> at the University of Tokyo. During my doctoral and postdoctoral studies in Japan, I was supported by the Nagoya University Interdisciplinary Frontier Fellowship and the Japan Society for the Promotion of Science (JSPS).</p> <h3 id="research-interests">Research Interests</h3> <ul> <li>Travel Behavior</li> <li>Transportation Network Modelling</li> <li>Logistics Service Design</li> </ul> </div> <h2> <a href="/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jan 15, 2016</th> <td> A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> </td> </tr> <tr> <th scope="row" style="width: 20%">Nov 07, 2015</th> <td> <a class="news-title" href="/news/announcement_2/">A long announcement with details</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 22, 2015</th> <td> A simple inline announcement. </td> </tr> </table> </div> </div> <h2> <a href="/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"> <li> <div class="row"> <div id="wang2023recursive" class="col-sm-10"> <div class="title">Recursive decomposition probability model for demand estimation of street-hailing taxis utilizing GPS trajectory data</div> <div class="author"> <em>Jianbiao Wang<sup>*</sup></em>, Tomio Miwa, and Takayuki Morikawa </div> <div class="periodical"> <em>Transportation Research Part B: Methodological</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div id="wang2023recovering" class="col-sm-10"> <div class="title">Recovering real demand for free-floating bike-sharing system considering demand truncation, migration, and spatial correlation</div> <div class="author"> <em>Jianbiao Wang<sup>*</sup></em>, Tomio Miwa, Xinwei Ma, Dawei Li, and Takayuki Morikawa </div> <div class="periodical"> <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> <li> <div class="row"> <div id="wang2026quantifying" class="col-sm-10"> <div class="title">Quantifying willingness-to-walk across varying urban visual contexts using a global-local path choice model</div> <div class="author"> <em>Jianbiao Wang</em> and Yuki Oyama<sup>*</sup> </div> <div class="periodical"> <em>Journal of Transport Geography</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> </div> </div> </div> </li> </ol> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:wang.jianbiao@njau.edu.cn" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/TransProb" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://scholar.google.com/citations?user=M4haNa0AAAAJ" title="Scholar userid" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> </div> <div class="contact-note">Feel free to contact me and discuss research works. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jianbiao WANG. © Jianbiao Wang </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
