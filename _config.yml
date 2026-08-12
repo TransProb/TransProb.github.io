@@ -99,7 +99,7 @@ footer_fixed: true
 search_enabled: False
 socials_in_search: true
 posts_in_search: true
-bib_search: true
+bib_search: False
 
 # Dimensions
 max_width: 930px
