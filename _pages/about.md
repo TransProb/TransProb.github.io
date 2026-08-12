@@ -29,7 +29,11 @@ body,
 p,
 h1,
 h2 {
-  text-transform: capitalize;
+  text-transform: none !important;
+}
+
+h2::first-letter {
+  text-transform: uppercase;
 },
 h3,
 h4,
