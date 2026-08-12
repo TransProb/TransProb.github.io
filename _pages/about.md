@@ -137,6 +137,26 @@ h3::first-letter {
     text-transform: uppercase;
   }
 }
+h2 + .publications,
+h2 + div.publications {
+  margin-top: 0 !important;
+}
+
+.publications {
+  padding-top: 0 !important;
+}
+
+.publications ol.bibliography {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+/* Disable link on Selected publications heading */
+h2 a[href*="/publications"] {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
 </style>
 
 Welcome, I am **Jianbiao Wang**, currently a lecturer at the [College of Information Management, Nanjing Agricultural University](https://info.njau.edu.cn/index.htm) since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
