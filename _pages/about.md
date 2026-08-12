@@ -51,6 +51,17 @@ article p {
   font-family: "Times New Roman", Times, serif !important;
   text-align: left;
 }
+
+.navbar .container {
+  display: flex;
+  justify-content: center !important;
+}
+
+.navbar-nav {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+  
 </style>
 
 Welcome, I am **Jianbiao Wang**, currently Lecturer at the *College of Information Management, Nanjing Agricultural University* from March, 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
