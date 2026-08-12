@@ -2,12 +2,13 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description:
 nav: true
 nav_order: 6
-calendar: true
 ---
+
 <style>
+/* Times New Roman */
 body,
 p,
 h1,
@@ -17,43 +18,46 @@ h4,
 h5,
 h6,
 li,
-a {
+a,
+strong,
+b,
+span {
   font-family: "Times New Roman", Times, serif !important;
 }
 
-/* 普通正文 */
+/* Normal body text */
 body,
 p,
 li {
   font-weight: 400;
 }
 
-/* 只有 Markdown 的 **文字** 加粗 */
+/* Bold text */
 strong,
 b {
-  font-family: "Times New Roman", Times, serif !important;
   font-weight: 700 !important;
 }
-  
+
+/* Justify paragraph text */
 article p {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
 }
 
-.profile .more-info,
-.profile .more-info p {
-  font-family: "Times New Roman", Times, serif !important;
-  text-align: left;
+/* Hide page title and description */
+.post-header,
+.post-title,
+.post-description {
+  display: none !important;
 }
 
-/* Center the navigation menu */
+/* Center navigation menu */
 @media (min-width: 992px) {
   .navbar {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
-}
 
   .navbar-nav {
     position: absolute;
@@ -63,12 +67,10 @@ article p {
   }
 
   .navbar-nav .nav-link {
+    font-family: "Times New Roman", Times, serif !important;
     text-transform: uppercase;
   }
 }
 </style>
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
-
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
 
 {% include courses.liquid %}
