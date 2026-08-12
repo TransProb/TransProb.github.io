@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: people
 description: members of the lab or group
-nav: True
+nav: false
 nav_order: 7
 
 profiles:
@@ -34,33 +34,35 @@ a {
   font-family: "Times New Roman", Times, serif !important;
 }
 
-/* 普通正文 */
+/* Normal body text */
 body,
 p,
 li {
   font-weight: 400;
 }
 
-/* 只有加粗文字变粗 */
+/* Bold text */
 strong,
 b {
   font-family: "Times New Roman", Times, serif !important;
   font-weight: 700 !important;
 }
 
+/* Justify paragraph text */
 article p {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
 }
 
+/* Profile information */
 .profile .more-info,
 .profile .more-info p {
   font-family: "Times New Roman", Times, serif !important;
   text-align: left;
 }
 
-/* 导航栏 */
+/* Navigation bar */
 @media (min-width: 992px) {
   .navbar {
     padding-top: 30px !important;
@@ -76,6 +78,7 @@ article p {
 
   .navbar-nav .nav-link {
     text-transform: uppercase;
+    font-weight: 700 !important;
   }
 }
 </style>
