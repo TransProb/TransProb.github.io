@@ -2,6 +2,7 @@
 layout: course
 title: Advanced discrete choice model
 description: This course covers advanced methods and applications for discrete choice modelling, including nested logit, route choice studies, machine learning-based choice models.
+instructor: Graduate course
 year: 2025
 term: Fall
 course_id: advanced-discrete-choice-modeling-2025
