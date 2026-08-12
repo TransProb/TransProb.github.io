@@ -157,6 +157,18 @@ h2 a[href*="/publications"] {
   color: inherit !important;
   text-decoration: none !important;
 }
+/* Change homepage News title to Updates */
+h2 a[href*="/news/"] {
+  font-size: 0 !important;
+}
+
+h2 a[href*="/news/"]::after {
+  content: "Updates";
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 400 !important;
+  color: inherit;
+}
 </style>
 
 Welcome, I am **Jianbiao Wang**, currently a lecturer at the [College of Information Management, Nanjing Agricultural University](https://info.njau.edu.cn/index.htm) since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
