@@ -56,12 +56,12 @@ article p {
 }
 </style>
 
-Welcome, I am a Lecturer at the College of Information Management, Nanjing Agricultural University from March, 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
+Welcome, I am a Lecturer at the *College of Information Management, Nanjing Agricultural University* from March, 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
 
-I received my Ph.D. from Nagoya University (2024) and subsequently conducted postdoctoral research at the University of Tokyo. During my doctoral and postdoctoral studies in Japan, I was supported by the Nagoya University Interdisciplinary Frontier Fellowship and the Japan Society for the Promotion of Science (JSPS).
+I received my Ph.D. from Nagoya University under the supervision of Prof. [Prof. Tomio Miwa](https://sites.google.com/site/tomiomiwa/home) in 2024 and subsequently conducted postdoctoral research with [Prof. Yuki Oyama](https://yuki-oyama.github.io/) at the University of Tokyo. During my doctoral and postdoctoral studies in Japan, I was supported by the Nagoya University Interdisciplinary Frontier Fellowship and the Japan Society for the Promotion of Science (JSPS).
 
 ### Research Interests
 
 - Travel Behavior 
-- Transportation Network Optimization
+- Transportation Network modelling
 - Logistics service design
