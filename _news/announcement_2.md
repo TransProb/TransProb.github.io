@@ -1,11 +1,8 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
-inline: false
+date: 2026-03-14 
+inline: true
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
-
----
+A co-authored paper was published in [*Journal of Transport Geography*](https://www.sciencedirect.com/science/article/pii/S0966692326000852)
