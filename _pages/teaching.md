@@ -73,6 +73,10 @@ article p {
 }
 
 a[href*="/teachings/"] {
+  display: block !important;
+  min-height: 2.4em !important;
+  line-height: 1.2 !important;
+
   pointer-events: none !important;
   cursor: default !important;
   text-decoration: none !important;
