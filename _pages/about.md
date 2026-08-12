@@ -41,10 +41,18 @@ a,
 strong {
   font-family: "Times New Roman", Times, serif !important;
 }
+/* 正文两端对齐 */
+article p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
 
+/* 照片下面的单位信息仍然左对齐 */
 .profile .more-info,
 .profile .more-info p {
   font-family: "Times New Roman", Times, serif !important;
+  text-align: left;
 }
 </style>
 
