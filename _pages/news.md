@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /news/
-title: news
+title: updates
 description:
 nav: false
 ---
