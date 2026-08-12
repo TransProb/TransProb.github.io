@@ -28,7 +28,7 @@ latest_posts:
 body,
 p,
 h1,
-h2::first-letter {
+h2:first-letter {
   text-transform: uppercase;
 },
 h3,
