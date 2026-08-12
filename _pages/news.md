@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /updates/
+permalink: /news/
 title: updates
 description:
 nav: false
