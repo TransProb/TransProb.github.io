@@ -25,21 +25,20 @@ latest_posts:
 ---
 
 <style>
-/* =========================
-   Global font
-   ========================= */
+/* Times New Roman */
 body,
 p,
-li,
-a,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+li,
+a,
 strong,
 b,
+span,
 .post-title,
 .post-description {
   font-family: "Times New Roman", Times, serif !important;
@@ -55,21 +54,18 @@ li {
 /* Bold text */
 strong,
 b {
+  font-family: "Times New Roman", Times, serif !important;
   font-weight: 700 !important;
 }
 
-/* =========================
-   Paragraph formatting
-   ========================= */
+/* Justify paragraph text */
 article p {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
 }
 
-/* =========================
-   Headings
-   ========================= */
+/* Keep headings in their original capitalization */
 h1,
 h2,
 h3,
@@ -79,27 +75,22 @@ h6 {
   text-transform: none !important;
 }
 
-/* Capitalize only the first letter of h2 headings
-   e.g. selected publications -> Selected publications */
+/* selected publications -> Selected publications */
 h2::first-letter {
   text-transform: uppercase;
 }
 
-/* =========================
-   Profile information
-   ========================= */
+/* Profile information */
 .profile .more-info,
 .profile .more-info p {
   font-family: "Times New Roman", Times, serif !important;
   text-align: left;
 }
 
-/* =========================
-   Navigation bar
-   ========================= */
+/* Center navigation menu
+   Keep exactly the same spacing as Publications */
 @media (min-width: 992px) {
   .navbar {
-    position: relative;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
   }
@@ -107,8 +98,7 @@ h2::first-letter {
   .navbar-nav {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     margin: 0 !important;
   }
 
@@ -118,7 +108,6 @@ h2::first-letter {
   }
 }
 </style>
-
 Welcome, I am **Jianbiao Wang**, currently a lecturer at the [College of Information Management, Nanjing Agricultural University](https://info.njau.edu.cn/index.htm) since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
 
 I received my Ph.D. from Nagoya University under the supervision of [Prof. Tomio Miwa](https://sites.google.com/site/tomiomiwa/home) in 2024 and subsequently conducted postdoctoral research with [Prof. Yuki Oyama](https://yuki-oyama.github.io/) at the University of Tokyo. During my doctoral and postdoctoral studies in Japan, I was supported by the Nagoya University Interdisciplinary Frontier Fellowship and the Japan Society for the Promotion of Science (JSPS).
