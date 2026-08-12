@@ -71,6 +71,12 @@ article p {
     text-transform: uppercase;
   }
 }
+
+a[href*="/teachings/"] {
+  pointer-events: none !important;
+  cursor: default !important;
+  text-decoration: none !important;
+}
 </style>
 
 {% include courses.liquid %}
