@@ -8,7 +8,13 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info:
+  more_info: >
+    <p><strong>Email:</strong><br>
+    <a href="mailto:wang.jianbiao@njau.edu.cn">wang.jianbiao@njau.edu.cn</a><br>
+    <a href="mailto:wang.jianbiao@gmail.com">wang.jianbiao@gmail.com</a></p>
+    <p><strong>Address:</strong><br>
+    Binjiang Campus, 666 Binjiang Avenue,<br>
+    Nanjing, Jiangsu 211800, China</p>
 
 selected_papers: true
 social: true
