@@ -87,7 +87,7 @@ h3 {
   font-weight: 400 !important;
   line-height: 1.2 !important;
   margin-top: 24px !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 6px !important;
   text-transform: none !important;
 }
 
