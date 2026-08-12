@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-03-27 
+date: 2026-03-01 
 inline: true
 related_posts: false
 ---
 
-Joined the College of Information Management at Nanjing Agricultural University as a Lecturer.
+I started my position as a Lecturer at the *College of Information Management, Nanjing Agricultural University*.
