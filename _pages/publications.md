@@ -68,6 +68,14 @@ article p {
     text-transform: uppercase;
   }
 }
+.pub-note {
+  margin-top: -20px !important;
+  margin-bottom: 8px !important;
+}
+
+.publications {
+  margin-top: -20px !important;
+}
 </style>
 <p class="pub-note">
   <u>Underlined author</u> indicates myself; * indicates the corresponding author.
