@@ -1,23 +1,10 @@
 ---
-layout: profiles
+layout: page
 permalink: /people/
 title: people
 description:
 nav: true
 nav_order: 7
-
-profiles:
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false
-    more_info:
-
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false
-    more_info:
 ---
 
 <style>
@@ -47,6 +34,7 @@ li {
 /* Bold text */
 strong,
 b {
+  font-family: "Times New Roman", Times, serif !important;
   font-weight: 700 !important;
 }
 
@@ -67,16 +55,14 @@ article p {
 /* Center navigation menu */
 @media (min-width: 992px) {
   .navbar {
-    position: relative;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
 
   .navbar-nav {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     margin: 0 !important;
   }
 
@@ -86,3 +72,7 @@ article p {
   }
 }
 </style>
+
+## People
+
+People information will be updated soon.
