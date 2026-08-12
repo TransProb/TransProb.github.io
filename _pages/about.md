@@ -34,13 +34,24 @@ h4,
 h5,
 h6,
 li,
-a,
+a {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* 普通正文 */
+body,
+p,
+li {
+  font-weight: 400;
+}
+
+/* 只有 Markdown 的 **文字** 加粗 */
 strong,
 b {
   font-family: "Times New Roman", Times, serif !important;
   font-weight: 700 !important;
 }
-
+  
 article p {
   text-align: justify;
   text-justify: inter-word;
