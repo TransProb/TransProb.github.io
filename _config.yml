@@ -7,12 +7,12 @@ first_name: Jianbiao
 middle_name: 
 last_name: WANG
 contact_note: >
-  Feel free to contact me and discuss research works.
+   <span style="font-size: 1.2rem;">Feel free to contact me and discuss research works.</span>
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic homepage of Jianbiao Wang in Nanjing Agricultural University. Research on transportation systems,
   travel behavior, shared mobility, logistics design.
 footer_text: >
-  © Jianbiao Wang
+  Built with al-folio (<a href="https://github.com/TransProb/jianbiao.github.io" target="_blank"></a>)
 keywords: Transportation, shared mobility, Travel demand, logistics 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
