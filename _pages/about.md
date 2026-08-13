@@ -15,6 +15,7 @@ profile:
     <p><strong>Address:</strong><br>
     Binjiang Campus, 666 Binjiang Avenue,<br>
     Nanjing, Jiangsu 211800, China</p>
+    <br>
 
 selected_papers: true
 social: true
