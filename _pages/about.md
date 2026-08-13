@@ -15,7 +15,7 @@ profile:
     <p><strong>Address:</strong><br>
     Binjiang Campus, 666 Binjiang Avenue,<br>
     Nanjing, Jiangsu 211800, China</p>
-    <br><br><br>
+    <hr style="border: none; border-top: 1px solid #d3d3d3; margin-top: 12px;">
 
 selected_papers: true
 social: true
@@ -172,7 +172,7 @@ h2 a[href*="/news/"]::after {
 }
 </style>
 
-Welcome, I am **Jianbiao Wang(王建彪)**, currently a lecturer at the [College of Information Management, Nanjing Agricultural University](https://info.njau.edu.cn/index.htm) since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
+Welcome, I am **Jianbiao Wang**, currently a lecturer at the [College of Information Management, Nanjing Agricultural University](https://info.njau.edu.cn/index.htm) since March 2026. My research focuses on transportation systems and logistics services, with particular interests in shared mobility, drone-based optimization, and agricultural logistics.
 
 I received my Ph.D. from Nagoya University under the supervision of [Prof. Tomio Miwa](https://sites.google.com/site/tomiomiwa/home) in 2024 and subsequently conducted postdoctoral research with [Prof. Yuki Oyama](https://yuki-oyama.github.io/) at the University of Tokyo. During my doctoral and postdoctoral studies in Japan, I was supported by the Nagoya University Interdisciplinary Frontier Fellowship and the Japan Society for the Promotion of Science (JSPS).
 
